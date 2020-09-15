@@ -28,7 +28,7 @@ header li img {
     margin-bottom: 4px;
 }
 
-header p {
+header .col-8 a {
     font-size: 30px;
     color: #2f4b6e;
     margin: 0;
@@ -42,16 +42,91 @@ header a {
     text-decoration: unset;
     color: #2f4b6e;
     font-size: 14px;
+    padding: 8px 0;
+}
+
+.getAppButton {
+    border-radius: 22px;
+    background-color: #f8e587;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.getAppButton a {
+    text-decoration: unset;
+    color: #2f4b6e;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.getAppButton img {
+    margin-bottom: 4px;
+}
+
+.firstHalf .getAppButton {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 29px;
+    width: 230px;
+    height: 55px;
+    margin-top: 3rem;
+}
+
+.firstHalf .getAppButton a {
+    font-size: 16px;
+    padding: 15px 0;
 }
 
 header a:hover, a:active {
     text-decoration: unset;
+    color: #2f4b6e;
 }
 
-.header_flex {
+.headerFlex {
     margin-top: 2rem;
 }
 
-.header_flex div:first-child {
+.headerFlex div:first-child {
     display: flex;
+}
+
+.heroBlock {
+    margin-top: 15rem;
+}
+
+.firstHalf p:first-child {
+    font-size: 42px;
+    color: #2f4b6e;
+    width: 410px;
+}
+
+.firstHalf p:nth-child(2) {
+    font-size: 24px;
+    color: #2f4b6e;
+    width: 440px;
+    font-weight: 400;
+}
+
+.secondHalf {
+    margin-top: 5rem;
+}
+
+.secondHalf img:first-child {
+    position: absolute;
+    z-index: 2;
+}
+
+.secondHalf img:last-child {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -3.5rem;
+}
+
+.androidAppMark {
+    font-size: 15px;
+    color: #738091;
+    font-weight: 400;
+    margin-top: 10px;
 }
