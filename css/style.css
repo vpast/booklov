@@ -46,6 +46,23 @@ header a {
     padding: 8px 0;
 }
 
+.logo-wrapper {
+    display: flex;
+}
+
+.logo-wrapper img {
+    width: 35px;
+    margin-right: 1rem;
+}
+
+.logo-wrapper a {
+    font-size: 2rem;
+}
+
+.header-btn {
+    width: 390px;
+}
+
 .getAppButton {
     border-radius: 22px;
     background-color: #f8e587;
@@ -86,10 +103,7 @@ header a:hover, a:active {
 
 .headerFlex {
     margin-top: 2rem;
-}
-
-.headerFlex div:first-child {
-    display: flex;
+    justify-content: space-between;
 }
 
 .heroBlock {
@@ -99,13 +113,13 @@ header a:hover, a:active {
 .firstHalf p:first-child {
     font-size: 42px;
     color: #2f4b6e;
-    width: 410px;
+    max-width: 410px;
 }
 
 .firstHalf p:nth-child(2) {
     font-size: 24px;
     color: #2f4b6e;
-    width: 440px;
+    max-width: 440px;
     font-weight: 400;
 }
 
@@ -115,6 +129,8 @@ header a:hover, a:active {
 
 .secondHalf img:first-child {
     position: absolute;
+    top: 0;
+    left: 1rem;
     z-index: 2;
 }
 
@@ -250,23 +266,26 @@ header a:hover, a:active {
 }
 
 .stories-block {
-    height: 550px;
+    position: relative;
+    height: 800px;
     background-image: url(/assets/yellow_BG.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center 4rem;
+    overflow-x: hidden;
 }
 
 
 .stories-block div:nth-child(1) img {
     position: absolute;
     right: 85rem;
-    top: 261rem;
+    top: 13rem;
 }
 
 .stories-block div:nth-child(3) img {
     position: absolute;
-    top: 253rem;
-    right: 0rem;
+    top: 0rem;
+    right: -3.5rem;
 }
 
 .stories-block div:nth-child(2) {
@@ -301,8 +320,10 @@ header a:hover, a:active {
 }
 
 .on-footer {
+    position: relative;
     margin-top: 10rem;
     height: 750px;
+    overflow: hidden;
 }
 
 .on-footer P:nth-child(1) {
@@ -318,8 +339,9 @@ header a:hover, a:active {
 
 .on-footer div:nth-child(2) {
     position: absolute;
-    top: 333.4rem;
-    right: 33rem;
+    bottom: -3.2rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .on-footer .getAppButton {
@@ -336,10 +358,6 @@ header a:hover, a:active {
 
 .on-footer .getAppButton img {
     padding-right: 1rem;
-}
-
-.on-footer .textBlock {
-    margin-top: 15rem;
 }
 
 footer {
@@ -373,4 +391,63 @@ footer p {
     font-weight: 400;
     color: #2f4b6e;
     font-size: 14px;
+}
+
+@media (max-width: 991px) {
+    .heroBlock {
+        margin-top: 0;
+    }
+
+    .firstHalf {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        text-align: justify;
+    }
+
+    .firstHalf P:first-child {
+        max-width: 440px;
+    }
+
+
+    .secondHalf {
+        position: relative;
+        order: -1;
+        height: 500px;
+    }
+
+    .secondHalf img {
+        max-height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .secondHalf img:first-child {
+        bottom: 0;
+        top: auto;
+        left: 48%;
+    }
+
+    .mainFirstBlock {
+        background-image: none;
+    }
+
+    .phones-block img {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .order-lgm-1 {
+        order: -1;
+    }
+
+    .stories-block {
+        background-size: auto 100%;
+        max-height: 500px;
+    }
+
+    .stories-block img {
+        display: none;
+    }
 }
