@@ -155,7 +155,7 @@ header a:hover, a:active {
 .joinGroup p {
     font-size: 21px;
     font-weight: 400;
-    width: 420px;
+    max-width: 420px;
     margin-bottom: 0;
 }
 
@@ -212,7 +212,7 @@ header a:hover, a:active {
 }
 
 .textBlock p:first-child {
-    width: 480px;
+    max-width: 480px;
     height: 100px;
     font-size: 42px;
     line-height: 52px;
@@ -221,7 +221,7 @@ header a:hover, a:active {
 }
 
 .textBlock p:nth-child(2) {
-    width: 590px;
+    max-width: 590px;
     height: 160px;
     font-size: 24px;
     line-height: 36px;
@@ -257,12 +257,12 @@ header a:hover, a:active {
 
 .phones-block .textBlock p:first-child {
     text-align: left;
-    width: 410px;
+    max-width: 410px;
 }
 
 .phones-block .textBlock p:last-child {
     text-align: left;
-    width: 410px;
+    max-width: 410px;
 }
 
 .stories-block {
@@ -449,5 +449,99 @@ footer p {
 
     .stories-block img {
         display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .headerFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-wrapper {
+        padding-bottom: 1rem;
+    }
+
+    .header-btn {
+        width: 340px;
+    }
+
+    .header-btn  ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-btn ul li:first-child {
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .firstHalf {
+        margin-top: 0;
+    }
+
+    .secondHalf {
+        margin-top: 0;
+    }
+
+    .secondHalf img {
+        transform: scale(0.5) translate(-100%, -20%);
+    }
+
+    .secondHalf img:first-child {
+        bottom: 3rem;
+    }
+
+    .joinGroup .col-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .joinGroup .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textBlock p:first-child {
+        margin-bottom: 5rem;
+    }
+
+    .textBlock p:last-child {
+        margin-bottom: 5rem;
+    }
+
+    .iconsBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconsBlock .col-4 {
+        margin-bottom: 2rem;
+    }
+
+    .phones-block .col-lg-6 {
+        height: 500px;
+    }
+
+    .phones-block img {
+        transform: scale(0.7) translate(-27%, -30%);
+    }
+
+    .stories-block .textBlock p:first-child {
+        margin-bottom: 2rem;
+    }
+
+    .stories-block .textBlock p:nth-child(2) {
+        margin-bottom: 3rem;
+    }
+
+    footer p {
+        text-align: center;
     }
 }
