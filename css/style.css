@@ -137,8 +137,8 @@ header a:hover, a:active {
 .secondHalf img:last-child {
     position: absolute;
     z-index: 1;
-    bottom: 0;
-    right: -3.5rem;
+    top: -9rem;
+    left: -1.5rem;
 }
 
 .androidAppMark {
@@ -393,9 +393,40 @@ footer p {
     font-size: 14px;
 }
 
+@media (max-width: 1199px) {
+
+    .heroBlock {
+        overflow: hidden;
+    }
+
+    .secondHalf img:first-child {
+        max-width: 90%;
+        top: 1.5rem;
+    }
+
+    .secondHalf img:last-child {
+        max-width: 110%;
+        top: -6rem;
+        left: -1.5rem;
+    }
+
+    .phones-block {
+        overflow: hidden;
+    }
+
+    .stories-block {
+        background-size: auto 100%;
+        max-height: 500px;
+    }
+
+    .stories-block img {
+        display: none;
+    }
+}
+
 @media (max-width: 991px) {
     .heroBlock {
-        margin-top: 0;
+        margin-top: 5rem;
     }
 
     .firstHalf {
@@ -419,14 +450,19 @@ footer p {
 
     .secondHalf img {
         max-height: 100%;
+        top: auto;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .secondHalf img:first-child {
         bottom: 0;
-        top: auto;
+        top: 2.5rem;
         left: 48%;
+    }
+
+    .secondHalf img:last-child {
+        left: 50%;
     }
 
     .mainFirstBlock {
@@ -440,15 +476,6 @@ footer p {
 
     .order-lgm-1 {
         order: -1;
-    }
-
-    .stories-block {
-        background-size: auto 100%;
-        max-height: 500px;
-    }
-
-    .stories-block img {
-        display: none;
     }
 }
 
@@ -477,6 +504,10 @@ footer p {
         padding-bottom: 1rem;
     }
 
+    .heroBlock {
+        margin-top: 3rem;
+    }
+
     .firstHalf {
         margin-top: 0;
     }
@@ -485,12 +516,16 @@ footer p {
         margin-top: 0;
     }
 
-    .secondHalf img {
-        transform: scale(0.5) translate(-100%, -20%);
+    .secondHalf img:first-child {
+        top: 7rem;
     }
 
-    .secondHalf img:first-child {
-        bottom: 3rem;
+    .secondHalf img:last-child {
+        top: 1rem;
+    }
+
+    .secondHalf {
+        height: 450px;
     }
 
     .joinGroup .col-6 {
@@ -509,6 +544,7 @@ footer p {
 
     .textBlock p:first-child {
         margin-bottom: 5rem;
+        height: auto;
     }
 
     .textBlock p:last-child {
@@ -530,7 +566,7 @@ footer p {
     }
 
     .phones-block img {
-        transform: scale(0.7) translate(-27%, -30%);
+        max-width: 100%;
     }
 
     .stories-block .textBlock p:first-child {
