@@ -136,9 +136,9 @@ header a:hover, a:active {
 
 .secondHalf img:last-child {
     position: absolute;
-    z-index: 1;
     top: -9rem;
     left: -1.5rem;
+    z-index: 1;
 }
 
 .androidAppMark {
